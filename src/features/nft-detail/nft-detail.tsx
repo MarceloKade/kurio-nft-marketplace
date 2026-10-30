@@ -1,7 +1,6 @@
 import { useMemo, useState } from "react";
 import { Link, useNavigate, useParams } from "@tanstack/react-router";
 import {
-  ArrowUpRight,
   EnvelopeSimple,
   Heart,
   LinkedinLogo,

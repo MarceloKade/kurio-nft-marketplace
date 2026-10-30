@@ -25,7 +25,11 @@ export type NFTCategory =
   | "Gaming"
   | "Photography"
   | "Collectibles"
-  | "Music";
+  | "Music"
+  | "Art3d"
+  | "Subscriptions"
+  | "Generactive"
+  | "Utility";
 
 export type NFTSortOption = "recent" | "price_asc" | "price_desc" | "popular";
 
