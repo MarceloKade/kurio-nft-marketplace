@@ -2,7 +2,7 @@
 
 Marketplace de NFTs desenvolvido como desafio técnico para a Jungle Gaming.
 
-O projeto contempla a experiência principal de navegação pelo catálogo, visualização de NFTs, gerenciamento do carrinho e estruturação do fluxo de checkout.
+O projeto apresenta uma experiência de navegação por coleções digitais, consulta de detalhes de NFTs, gerenciamento do carrinho e estruturação do fluxo de checkout.
 
 **Status:** Implementação parcial do escopo proposto.
 
@@ -33,7 +33,7 @@ O projeto contempla a experiência principal de navegação pelo catálogo, visu
 - [x] Gerenciamento do carrinho com Zustand.
 - [x] Contador de itens no carrinho.
 - [x] Página do carrinho.
-- [x] Estrutura da página de checkout.
+- [x] Página de checkout.
 - [x] Seleção de método de pagamento e rede.
 - [x] Aplicação de código promocional.
 - [x] Cálculo de subtotal, desconto, taxa de rede e total.
@@ -52,18 +52,20 @@ O projeto contempla a experiência principal de navegação pelo catálogo, visu
 
 ## Funcionalidades não implementadas
 
-Devido ao prazo de desenvolvimento, algumas partes do escopo original não foram concluídas:
+Devido ao prazo de desenvolvimento, algumas funcionalidades previstas no escopo original não foram concluídas:
 
-- Autenticação e login.
-- Cadastro de usuários.
-- Perfil do colecionador.
-- Gerenciamento de carteiras.
-- Versão responsiva para dispositivos móveis.
-- Implementação completa dos fluxos de tempo real.
-- Cobertura completa dos cenários de falha.
-- Testes automatizados de ponta a ponta.
+- [ ] Página de cadastro de usuários.
+- [ ] Página de login e autenticação.
+- [ ] Perfil do colecionador.
+- [ ] Gerenciamento e conexão de carteiras.
+- [ ] Versão responsiva para dispositivos móveis.
+- [ ] Implementação completa dos fluxos de tempo real com Socket.IO.
+- [ ] Cobertura completa dos cenários de falha e recuperação.
+- [ ] Testes automatizados de ponta a ponta com Playwright.
 
-A aplicação foi desenvolvida priorizando a experiência em telas desktop.
+A automação de testes com Playwright fazia parte do planejamento do projeto, mas não chegou a ser implementada dentro do prazo disponível.
+
+A interface desenvolvida prioriza a experiência em telas desktop.
 
 ## Gerenciamento de estado e dados
 
@@ -83,13 +85,13 @@ A tipografia principal é Roboto Mono.
 Clone o repositório:
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/MarceloKade/kurio-nft-marketplace.git
 ```
 
-Acesse o projeto:
+Acesse a pasta:
 
 ```bash
-cd nft-marketplace
+cd kurio-nft-marketplace
 ```
 
 Instale as dependências:
@@ -115,16 +117,16 @@ npm run dev
 
 ## Variáveis de ambiente
 
-Consulte o arquivo `.env.example`, caso disponível, para verificar as variáveis necessárias.
+Consulte o arquivo `.env.example`, caso disponível, para verificar as variáveis necessárias para execução da aplicação.
 
 ## Demonstração
 
-**Repositório:** <https://github.com/MarceloKade/kurio-nft-marketplace>
+**Repositório:** [kurio-nft-marketplace](https://github.com/MarceloKade/kurio-nft-marketplace)
 
-**Aplicação publicada:** <URL_DO_DEPLOY>
+**Aplicação publicada:** [deploy](https://kurio-nft-marketplace-blush.vercel.app/).
 
 ## Considerações finais
 
-O projeto representa uma implementação parcial do desafio. As funcionalidades desenvolvidas priorizam a navegação pelo marketplace, a consulta de NFTs e o fluxo de compra.
+O desenvolvimento priorizou a construção das páginas principais do marketplace, a navegação pelo catálogo, a consulta de NFTs e o fluxo de compra.
 
-Algumas funcionalidades previstas no escopo original não foram concluídas dentro do prazo, conforme descrito nesta documentação.
+Algumas funcionalidades previstas no desafio não foram concluídas dentro do prazo estabelecido. As limitações estão documentadas para apresentar com transparência o estado atual da aplicação.
