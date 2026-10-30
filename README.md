@@ -16,7 +16,7 @@ O projeto apresenta uma experiência de navegação por coleções digitais, con
 - TanStack Query
 - Zustand
 - Axios
-- MSW
+- MSW (Mock Service Worker)
 - shadcn/ui
 - Phosphor Icons
 
@@ -63,7 +63,7 @@ Devido ao prazo de desenvolvimento, algumas funcionalidades previstas no escopo 
 - [ ] Cobertura completa dos cenários de falha e recuperação.
 - [ ] Testes automatizados de ponta a ponta com Playwright.
 
-A automação de testes com Playwright fazia parte do planejamento do projeto, mas não chegou a ser implementada dentro do prazo disponível.
+A automação de testes com Playwright fazia parte do planejamento técnico, mas não chegou a ser implementada dentro do prazo disponível.
 
 A interface desenvolvida prioriza a experiência em telas desktop.
 
@@ -72,7 +72,7 @@ A interface desenvolvida prioriza a experiência em telas desktop.
 - **Zustand:** gerenciamento do estado do carrinho.
 - **TanStack Query:** gerenciamento de consultas e cache.
 - **Axios:** comunicação HTTP.
-- **MSW:** interceptação de requisições e utilização de mocks durante o desenvolvimento.
+- **MSW:** interceptação de requisições e simulação da API durante o desenvolvimento local.
 
 ## Interface
 
@@ -119,11 +119,17 @@ npm run dev
 
 Consulte o arquivo `.env.example`, caso disponível, para verificar as variáveis necessárias para execução da aplicação.
 
+## Limitações conhecidas
+
+**Ambiente de produção:** não foi possível concluir a configuração do MSW para interceptar as requisições na aplicação publicada pela Vercel. Por esse motivo, os dados do catálogo podem não ser carregados na versão hospedada.
+
+A simulação da API funciona no ambiente de desenvolvimento local.
+
 ## Demonstração
 
 **Repositório:** [kurio-nft-marketplace](https://github.com/MarceloKade/kurio-nft-marketplace)
 
-**Aplicação publicada:** [deploy](https://kurio-nft-marketplace-blush.vercel.app/).
+**Aplicação publicada:** [KURIO — Vercel](https://kurio-nft-marketplace-blush.vercel.app/)
 
 ## Considerações finais
 
